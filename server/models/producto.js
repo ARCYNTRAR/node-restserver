@@ -9,6 +9,7 @@ let productoSchema = new Schema({
   },
   descripcion: { type: String, required: false },
   disponible: { type: Boolean, default: true },
+  img: {type: String,required: false},
   categoria: { type: Schema.Types.ObjectId, ref: "Categoria", required: true },
   usuario: { type: Schema.Types.ObjectId, ref: "Usuario" },
 });
