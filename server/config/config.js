@@ -1,5 +1,3 @@
-
-
 //  ================================
 //              Puerto
 //  ================================
@@ -13,24 +11,22 @@ process.env.PORT = process.env.PORT || 3000;
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
 //  ================================
-//        Vencimiento del Tokem
+//     Vencimiento del Tokem
 //  ================================
-// 60 segundos
-// 60 minutos
-// 24 horas
-// 30 dias
+
+// 60 segundos, 60 minutos, 24 horas, 30 dias
 
 process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
 
 //  ================================
-//            Seed de Auth
+//          Seed de Auth
 //  ================================
 
 process.env.SEED = process.env.SEED || "este-es-el-seed-de-desarrollo";
 
 
 //  ================================
-//              Base de Datos
+//          Base de Datos
 //  ================================
 
 let urlDB;
@@ -44,7 +40,7 @@ if(process.env.NODE_ENV === 'dev'){
 process.env.URLDB = urlDB;
 
 //  ================================
-//            Google Client id
+//        Google Client id
 //  ================================
 
 process.env.CLIENT_ID = process.env.CLIENT_ID || '383554142596-idt3bnchgcj44s4kdi41d9legas6g00a.apps.googleusercontent.com';
